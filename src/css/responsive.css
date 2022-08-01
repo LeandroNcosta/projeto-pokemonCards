@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+  body {
+    background-color: red;
+    zoom: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .pokemon-slider {
+    padding: 0 15px;
+    gap: 10px;
+    zoom: 100%;
+  }
+  .pokemon-slider button {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lista-pokemons {
+    height: 480px;
+  }
+  figure img {
+    max-height: 230px;
+  }
+  .prop h2 {
+    max-width: 50%;
+    font-size: 20px;
+  }
+  .prop p {
+    font-size: 12px;
+  }
+}

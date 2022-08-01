@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Game";
+  src: url("../../font/Comication.ttf") format("truetype");
+}
+
+/* RESET  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background: url(../../src/images/fundo-site.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  zoom: 80%;
+  overflow-y: hidden;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  min-height: 200%;
+  background-color: #000;
+  z-index: 200;
+  position: absolute;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+.cabecalho .titulo {
+  color: #f1ecff;
+}
+.cabecalho img {
+  width: 40px;
+  height: 40px;
+}
+
+.cabecalho div {
+  display: flex;
+  gap: 15px;
+}
+#indice-card {
+  font-size: 5rem;
+  color: #f1ecff;
+  font-family: "Game";
+}
+
+/* MAIN*/
+
+.pokemon-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 30px 0;
+}
+
+.lista-pokemons {
+  width: 310px;
+  height: 520px;
+  list-style: none;
+  box-shadow: 5px 5px 15px -4px black;
+  /* deixar os cards da li tudo no mesmo espaço */
+  position: relative;
+}
+
+.pokemon-slider button {
+  background-color: #f1ecff;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* seletor duas classes - ESPECIFIDADE*/
+button.btn-back {
+  transform: rotateY(180deg);
+}
+
+.pokemon-slider button:hover {
+  background-color: #8351fe;
+}
+
+/*  */
+
+.card {
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* deixar os cards da li tudo no mesmo espaço */
+  position: absolute;
+  padding: 12px;
+  border-radius: 10px;
+  transition: opacity 0.9s ease-in-out;
+}
+
+/* cartao selecionado vai aparecer */
+.card.select {
+  opacity: 1;
+  z-index: 1; /*o card que estiver com classe select vai sobrepor os outros no mesmo espaco */
+}
+
+.fundo-1 {
+  background: url(../images/fundo-card-9.jpg) no-repeat;
+}
+.fundo-2 {
+  background: url(../images/fundo-card-2.jpg) no-repeat;
+}
+.fundo-3 {
+  background: url(../images/fundo-card-3.jpg) no-repeat;
+}
+
+.card .prop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(179, 177, 185, 0.7);
+  border-radius: 10px 10px 0 0;
+  color: #f1ecff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 8px 10px;
+}
+
+.prop p {
+  background-color: #333;
+  color: #f1ecff;
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 280px;
+  padding: 20px;
+}
+
+.card .info {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 10px;
+}
+
+.card .info h3 {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.card .info p {
+  font-size: 14px;
+  padding: 12px;
+  color: #000;
+  text-align: justify;
+  max-height: 115px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6e4ac9;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}

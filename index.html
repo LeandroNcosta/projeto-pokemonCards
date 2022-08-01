@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/images/pokebola.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <title>ProjetoDev week</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div>
+        <img src="src/images/pokebola.png" alt="pokebola" />
+        <h1 class="titulo">PokemonCards</h1>
+      </div>
+      <p id="indice-card">0</p>
+    </header>
+
+    <main class="pokemon-slider">
+      <button id="btn-seta-voltar" class="btn-back">
+        <img src="src/images/seta.png" alt="seta voltar" />
+      </button>
+
+      <ul class="lista-pokemons">
+        <li class="card select fundo-1">
+          <div class="prop">
+            <h2 class="name-pokemon">Pikachu</h2>
+            <p class="hp">HP 300</p>
+          </div>
+
+          <figure>
+            <img src="src/images/pikachu.png" alt="pikachu" />
+          </figure>
+
+          <div class="info">
+            <h3>Descrição</h3>
+            <p>
+              Os Pikachus são pequenos roedores de quarenta centímetros e de
+              seis quilogramas, com um corpo redondo, pernas curtas e uma longa
+              cauda, quando macho, a cauda tem um formato de um raio, mas se o
+              Pikachu for fêmea sua cauda ganha um coração na ponta.
+            </p>
+          </div>
+        </li>
+
+        <li class="card fundo-2">
+          <div class="prop">
+            <h2>Charizard</h2>
+            <p>HP 800</p>
+          </div>
+
+          <figure>
+            <img src="src/images/charizard.png" alt="charizard" />
+          </figure>
+
+          <div class="info">
+            <h3>Descrição</h3>
+            <p>
+              Geralmente, um Charizard é competitivo. Ele adora a batalha e seu
+              espírito competitivo também é notável, uma vez que nunca vai
+              cuspir fogo em um inimigo mais fraco a menos que provocado ou
+              ordenado. Quando fica muito irritado, as chamas em sua cauda se
+              tornam branco-azuladas.
+            </p>
+          </div>
+        </li>
+
+        <li class="card fundo-3">
+          <div class="prop">
+            <h2>Mewtwo</h2>
+            <p>HP 1200</p>
+          </div>
+
+          <figure>
+            <img src="src/images/mewtwo.png" alt="Mewtwo" />
+          </figure>
+
+          <div class="info">
+            <h3>Descrição</h3>
+            <p>
+              Mewtwo foi criado geneticamente em um laboratório, sendo um clone
+              do misterioso antigo Pokémon Mew. É uma criatura com uma postura
+              humanóide, mas tem algumas características felinas.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <button id="btn-seta-avancar">
+        <img src="src/images/seta.png" alt="seta avancar" />
+      </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
