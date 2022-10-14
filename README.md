@@ -13,5 +13,5 @@ Aplicação está disponível através do link: <a target="_blank" href="https:/
 - JavaScript 
 
 ## Demonstração
-<img width="10em" src="src/images/print-pikachu.png"/>
-<img width="10em" src="src/images/print-mewtwo.png"/>
+<img  src="src/images/print-pikachu.png"/>
+<img src="src/images/print-mewtwo.png"/>
