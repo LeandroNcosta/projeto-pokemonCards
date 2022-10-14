@@ -1,4 +1,4 @@
-# projeto-pokemonCards
+# Projeto pokémonSlides
 
 ## Aplicação
 Aplicação está disponível através do link: <a target="_blank" href="https://leandroncosta.github.io/projeto-pokemonCards/">Clique aqui</a> 
@@ -13,5 +13,5 @@ Aplicação está disponível através do link: <a target="_blank" href="https:/
 - JavaScript 
 
 ## Demonstração
-<img width="10em" src="src/images/print-pikachu"/>
-<img width="10em" src="src/images/print-mewtwo"/>
+<img width="10em" src="src/images/print-pikachu.png"/>
+<img width="10em" src="src/images/print-mewtwo.png"/>
